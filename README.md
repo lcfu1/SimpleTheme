@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+# {{ site.title }}
 
-You can use the [editor on GitHub](https://github.com/lcfu1/SimpleTheme/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+> Description：{{ site.description }}
+>
+> author：{{ site.author }}
+>
+> <a class="github-button" href="https://github.com/{{ site.author }}/{{ site.title }}/subscription" data-show-count="true" aria-label="Watch {{ site.author }}/{{ site.title }} on GitHub">Watch</a>
+<a class="github-button" href="https://github.com/{{ site.author }}/{{ site.title }}" data-show-count="true" aria-label="Star {{ site.author }}/{{ site.title }} on GitHub">Star</a>
+<a class="github-button" href="https://github.com/{{ site.author }}/{{ site.title }}/fork" data-show-count="true" aria-label="Fork {{ site.author }}/{{ site.title }} on GitHub">Fork</a>
+<a class="github-button" href="https://github.com/{{ site.author }}/{{ site.title }}/issues" data-show-count="true" aria-label="Issue {{ site.author }}/{{ site.title }} on GitHub">Issue</a>
+<a class="github-button" href="https://github.com/{{ site.author }}" data-show-count="true" aria-label="Follow @{{ site.author }} on GitHub">Follow @{{ site.author }}</a>
+<a class="github-button" href="https://github.com/{{ site.author }}/{{ site.title }}/archive/master.zip" aria-label="Download {{ site.author }}/{{ site.title }} on GitHub">Download</a>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## SimpleTheme
 
-### Markdown
+- 使用
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lcfu1/SimpleTheme/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+  

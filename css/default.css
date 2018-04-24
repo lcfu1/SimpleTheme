@@ -1,0 +1,15 @@
+.fixed-btn {
+	position: fixed;
+	right: 2%;
+	bottom: 5%;
+	width: 40px;
+	/*border: 1px solid #eee;
+	background-color: white;*/
+	z-index: 1040;
+}
+.fixed-btn .go-top {
+    /*border-bottom: 1px solid #eee;*/
+}
+.fixed-btn .go-home {
+    /*solid #eee;*/
+}
