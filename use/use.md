@@ -2,7 +2,7 @@
 
 ### 效果：
 
-![image](images\image.PNG)
+![image](\SimpleTheme\images\image.PNG)
 
 ### 步骤：
 
