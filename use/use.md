@@ -14,7 +14,7 @@
 3、打开_config.yml进行配置，如下。
 
 ```
-#title必须设置和github上该repository的name一致，如果该repository name为"用户名.github.io"，则不需要填。
+#title必须设置和github上该repository的name一致。
 title: SimpleTheme
 
 #author设置为github用户名
@@ -22,7 +22,7 @@ author: lcfu1
 
 description: SimpleTheme
 
-#把下面这个theme注释掉
+#记得把下面这个theme注释掉
 #theme: jekyll-theme-cayman
 ```
 
@@ -46,6 +46,7 @@ description: SimpleTheme
 
 - SimpleTheme
 
+	- 跟Github同种主题模式，SimpleTheme只为更好的阅读。
 	- [使用说明](use/use.md)
 ```
 

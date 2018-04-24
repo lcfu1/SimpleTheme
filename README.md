@@ -16,7 +16,5 @@
 - SimpleTheme
 
   - 跟Github同种主题模式，SimpleTheme只为更好的阅读。
-
-
   - [使用说明](use/use.md)
 
