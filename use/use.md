@@ -1,6 +1,8 @@
+# 使用说明
+
 ### 效果：
 
-![image.png](https://upload-images.jianshu.io/upload_images/6025530-c1b10fbbdb0fbda3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](images\image.PNG)
 
 ### 步骤：
 
