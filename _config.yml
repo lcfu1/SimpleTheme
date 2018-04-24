@@ -5,3 +5,5 @@ title: SimpleTheme
 author: lcfu1
 
 description: SimpleTheme
+
+theme: jekyll-theme-cayman
