@@ -1,31 +1,31 @@
-.title{
+.header{
 	display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 0;
-    margin-bottom: 20px;
-    font-size: 34px;
+    padding: 10px;
+    font-size: 14px;
     line-height: 17px;
+    background-color: #f6f8fa;
+    border: 1px solid rgba(27,31,35,0.05);
+    border-radius: 3px 3px 0 0;
 }
-.svg{
-    display: block;
+.readme_body{
+	padding: 5px;
+	padding-bottom: 40px;
+    word-wrap: break-word;
+    background-color: #fff;
+    border: 1px solid rgba(27,31,35,0.05);
+    border-top: 0;
+    border-bottom: 0;
+}
+.footer{
+	display: block;
     padding: 9px 10px 10px;
     margin: 0;
     font-size: 14px;
     line-height: 17px;
     background-color: #f6f8fa;
-    border: 1px solid rgba(27,31,35,0.15);
+    border: 1px solid rgba(27,31,35,0.05);
     border-bottom: 0;
-    border-radius: 3px 3px 0 0;
-}
-.readme_body{
-	padding: 30px;
-	padding-top: 10px;
-    word-wrap: break-word;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
+    border-radius: 0 0 3px 3px;
 }
 .fixed-btn {
 	position: fixed;
