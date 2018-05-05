@@ -22,6 +22,35 @@
 		<link rel="stylesheet" href="/{{ site.title }}/css/default.css" />
 		<script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
 		<script src="../js/bmob-min.js" ></script>
+	
+		<script>
+		Bmob.initialize("d6f5df1e30903a0a49634f3ac9c96ecf", "29bc5d837e8c6054da46fde3ddfce1c8");
+
+		var TestObject = Bmob.Object.extend("{{ site.title }}");
+		var testObject = new TestObject();
+		testObject.save({
+			posts: "{{ page.name }}"
+		}, {
+			success: function(object) {
+				alert("成功");
+			},
+			error: function(model, error) {
+				alert("错误");
+			}
+		});
+		
+		var TestObject = Bmob.Object.extend("{{ site.title }}");
+		var query = new Bmob.Query(TestObject);
+		// 查询所有数据
+		query.equalTo("posts", "{{ page.name }}");
+		query.find({
+			success: function(results) {
+				document.getElementById("numb").innerHTML = "阅读   "+results.length;
+			},
+			error: function(error) {
+			}
+		});
+		</script>
 	</head>
 
 	<body>
@@ -44,34 +73,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
 		<script>anchors.add();</script>
 		
-		<script type="text/javascript">
-		Bmob.initialize("d6f5df1e30903a0a49634f3ac9c96ecf", "29bc5d837e8c6054da46fde3ddfce1c8");
-
-		var TestObject = Bmob.Object.extend("{{ site.title }}");
-		var testObject = new TestObject();
-		testObject.save({
-			posts: "{{ page.name }}"+1
-		}, {
-			success: function(object) {
-				alert("成功");
-			},
-			error: function(model, error) {
-				alert("错误");
-			}
-		});
-		
-		var TestObject = Bmob.Object.extend("{{ site.title }}");
-		var query = new Bmob.Query(TestObject);
-		// 查询所有数据
-		query.equalTo("posts", "{{ page.name }}"+1);
-		query.find({
-			success: function(results) {
-				document.getElementById("numb").innerHTML = "阅读   "+results.length;
-			},
-			error: function(error) {
-			}
-		});
-		</script>
 	</body>
 
 </html>
