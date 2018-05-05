@@ -34,11 +34,9 @@
     		</div>
 			<div class="readme_body">	
 				{{ content }}
-				<h1>1231</h1>
-				<h1>1231</h1>
 			</div>
 			<div class="footer">
-      			<p id="numb"></p>
+      			<span id="numb">阅读</span>
       			<p style="float: right;">顶部</p>
       			<p style="float: right; margin-right: 10px;">返回</p>
     		</div>
@@ -66,7 +64,7 @@
 		query.equalTo("posts", "{{ page.name }}");
 		query.find({
 			success: function(results) {
-				document.getElementById("numb").innerHTML = "阅读  " + results.length;
+				document.getElementById("numb").innerHTML = "阅读  "+results.length;
 			},
 			error: function(error) {
 			}
