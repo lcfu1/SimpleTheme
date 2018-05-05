@@ -37,13 +37,14 @@
 			</div>
 			<div class="footer">
       			<span id="numb">阅读</span>
-      			<a href="javascript:scroll(0,0)"></a><p id="bottom" style="float: right;">顶部</p>
+      			<a href="javascript:scroll(0,0)"><p id="bottom" style="float: right;">顶部</p></a>
       			<a href="javascript:history.back(-1)"><p style="float: right; margin-right: 15px;">返回</p></a>
     		</div>
 		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
 		<script>anchors.add();</script>
 		
+		<!--统计阅读次数-->
 		<script type="text/javascript">
 		Bmob.initialize("{{ site.id }}", "{{ site.key }}");
 
