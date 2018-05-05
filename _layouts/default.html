@@ -50,9 +50,10 @@
 		var TestObject = Bmob.Object.extend("{{ site.title }}");
 		var testObject = new TestObject();
 		testObject.save({
-			posts: "{{ page.name | m}}"
+			posts: "{{ page.name }}"
 		}, {
 			success: function(object) {
+				alert("成功");
 			},
 			error: function(model, error) {
 				alert("错误");
