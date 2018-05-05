@@ -21,6 +21,7 @@
 		<link rel="stylesheet" href="/{{ site.title }}/assets/css/style.css?v=4fa5a0ee3a7dfabd77088bce85674c528bc6edf3">
 		<link rel="stylesheet" href="/{{ site.title }}/css/default.css" />
 		<script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+		<script type="text/javascript" src="../js/bmob-min.js" ></script>
 	</head>
 
 	<body>
@@ -37,13 +38,40 @@
 				<h1>1231</h1>
 			</div>
 			<div class="footer">
-      			阅读 10
+      			<p id="numb"></p>
       			<p style="float: right;">顶部</p>
       			<p style="float: right; margin-right: 10px;">返回</p>
     		</div>
 		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
 		<script>anchors.add();</script>
+		
+		<script type="text/javascript">
+		Bmob.initialize("d6f5df1e30903a0a49634f3ac9c96ecf", "29bc5d837e8c6054da46fde3ddfce1c8");
+
+		var TestObject = Bmob.Object.extend("{{ site.title }}");
+		var testObject = new TestObject();
+		testObject.save({
+			posts: "{{ page.name }}"
+		}, {
+			success: function(object) {
+			},
+			error: function(model, error) {
+			}
+		});
+		
+		var TestObject = Bmob.Object.extend("{{ page.name }}");
+		var query = new Bmob.Query(TestObject);
+		// 查询所有数据
+		query.equalTo("posts", "{{ page.name }}");
+		query.find({
+			success: function(results) {
+				document.getElementById("numb").innerHTML = "阅读  " + results.length;
+			},
+			error: function(error) {
+			}
+		});
+		</script>
 	</body>
 
 </html>
