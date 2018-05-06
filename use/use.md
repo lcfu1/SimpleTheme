@@ -2,7 +2,7 @@
 
 ### 效果：
 
-![SimpleTheme](https://raw.githubusercontent.com/lcfu1/Image/master/SimpleTheme.png)
+![SimpleTheme](https://raw.githubusercontent.com/lcfu1/Image/master/SimpleTheme.PNG)
 
 ### 步骤：
 
