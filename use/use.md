@@ -2,52 +2,34 @@
 
 ### 效果：
 
-![image](/SimpleTheme/images/image.PNG)
+![SimpleTheme](https://raw.githubusercontent.com/lcfu1/Image/master/SimpleTheme.png)
 
 ### 步骤：
 
 1、Fork **[SimpleTheme](https://github.com/lcfu1/SimpleTheme)** 到你的github上。
+
 2、到Settings中点击Choose a theme随便选择一个theme。
 
-![image.png](https://upload-images.jianshu.io/upload_images/6025530-d3cf51e17b786b72.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![SimpleTheme-Theme](https://raw.githubusercontent.com/lcfu1/Image/master/SimpleTheme-Theme.png)
 
 3、打开_config.yml进行配置，如下。
 
 ```
-#title必须设置和github上该repository的name一致。
+#title必须设置和github上该repository的name一致，如果是 用户.github.io，则可以不填。
 title: SimpleTheme
 
 #author设置为github用户名
 author: lcfu1
 
-description: SimpleTheme
-
 #记得把下面这个theme注释掉
 #theme: jekyll-theme-cayman
+
+#这里的Application ID和REST API Key可以通过注册bmob，然后新建一个项目，从而获得该项目的Application ID和REST API Key，用于统计文章阅读次数。
+#Application ID
+id: d6f5df1e30903a0a49634f3ac9c96ecf
+
+#REST API Key
+key: 29bc5d837e8c6054da46fde3ddfce1c8
 ```
 
-4、README.md就是该Github Pages的主页，打开README.md进行编辑（可根据自己的需要进行修改），不过我希望能够统一按照下面例子进行修改：
-
-```
-# {{ site.title }}
-
-> Description：{{ site.description }}
->
-> author：{{ site.author }}
->
-> <a class="github-button" href="https://github.com/{{ site.author }}/{{ site.title }}/subscription" data-show-count="true" aria-label="Watch {{ site.author }}/{{ site.title }} on GitHub">Watch</a>
-<a class="github-button" href="https://github.com/{{ site.author }}/{{ site.title }}" data-show-count="true" aria-label="Star {{ site.author }}/{{ site.title }} on GitHub">Star</a>
-<a class="github-button" href="https://github.com/{{ site.author }}/{{ site.title }}/fork" data-show-count="true" aria-label="Fork {{ site.author }}/{{ site.title }} on GitHub">Fork</a>
-<a class="github-button" href="https://github.com/{{ site.author }}/{{ site.title }}/issues" data-show-count="true" aria-label="Issue {{ site.author }}/{{ site.title }} on GitHub">Issue</a>
-<a class="github-button" href="https://github.com/{{ site.author }}" data-show-count="true" aria-label="Follow @{{ site.author }} on GitHub">Follow @{{ site.author }}</a>
-<a class="github-button" href="https://github.com/{{ site.author }}/{{ site.title }}/archive/master.zip" aria-label="Download {{ site.author }}/{{ site.title }} on GitHub">Download</a>
-
-## Theme
-
-- SimpleTheme
-
-	- 跟Github同种主题模式，SimpleTheme只为更好的阅读。
-	- [使用说明](use/use.md)
-```
-
-5、end
+4、README.md就是该Github Pages的主页，打开README.md进行编辑（可根据自己的需要进行修改）。
