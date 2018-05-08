@@ -48,25 +48,41 @@
 		<!--统计阅读次数-->
 		<script type="text/javascript">
 		Bmob.initialize("{{ site.id }}", "{{ site.key }}");
-
-		var TestObject = Bmob.Object.extend("{{ site.title }}");
+		var TestObject = Bmob.Object.extend("{{ site.table }}");
 		var testObject = new TestObject();
-		testObject.save({
-			posts: "{{ page.name }}"
-		}, {
-			success: function(object) {
-			},
-			error: function(model, error) {
-			}
-		});
-		
-		var TestObject = Bmob.Object.extend("{{ site.title }}");
 		var query = new Bmob.Query(TestObject);
 		// 查询所有数据
 		query.equalTo("posts", "{{ page.name }}");
 		query.find({
 			success: function(results) {
-				document.getElementById("numb").innerHTML = "阅读   "+results.length;
+				if(results.length==0){
+					document.getElementById("numb").innerHTML = "阅读   "+1;
+					testObject.save({
+						posts: "{{ page.name }}",
+						num: 1
+						}, {
+						success: function(object) {
+						},
+						error: function(model, error) {
+						}
+					});
+				}else{
+					for (var i = 0; i < results.length; i++) {
+						var object = results[i];
+      					var num1=object.get('num')+1;
+      					document.getElementById("numb").innerHTML = "阅读   "+num1;
+      					var object1=object.get('posts');
+    					//alert(object1+num1+object.id);
+						query.get(object.id, {
+    						success: function(testObject) {
+      							testObject.set('num', num1);
+      							testObject.save();
+    						},
+    						error: function(object, error) {
+							}
+						});
+      				}
+				}
 			},
 			error: function(error) {
 			}
