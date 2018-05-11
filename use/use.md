@@ -30,6 +30,9 @@ id: d6f5df1e30903a0a49634f3ac9c96ecf
 
 #REST API Key
 key: 29bc5d837e8c6054da46fde3ddfce1c8
+
+#这里的table填写的表名要跟bmob上新建的表名一样
+table: SimpleTheme
 ```
 
 4、README.md就是该Github Pages的主页，打开README.md进行编辑（可根据自己的需要进行修改）。
