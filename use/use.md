@@ -2,7 +2,7 @@
 
 ### 效果：
 
-![SimpleTheme](https://raw.githubusercontent.com/lcfu1/Image/master/SimpleTheme.PNG)
+![SimpleTheme](https://raw.githubusercontent.com/lcfu1/Image/master/Use/SimpleTheme.PNG)
 
 ### 步骤：
 
@@ -10,7 +10,7 @@
 
 2、到Settings中点击Choose a theme随便选择一个theme。
 
-![SimpleTheme-Theme](https://raw.githubusercontent.com/lcfu1/Image/master/SimpleTheme-Theme.png)
+![SimpleTheme-Theme](https://raw.githubusercontent.com/lcfu1/Image/master/Use/SimpleTheme-Theme.png)
 
 3、打开_config.yml进行配置，如下。
 
